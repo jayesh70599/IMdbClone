@@ -12,7 +12,7 @@ renderList();
 
 // load movies from API
 async function loadMovies(searchTerm) {
-  const URL = ` http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=549515e`;
+  const URL = ` https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=549515e`;
   const res = await fetch(`${URL}`);
   const data = await res.json();
   // console.log(data.Search);
