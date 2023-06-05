@@ -103,6 +103,10 @@ function displayMovieDetails(details) {
 
 function renderList() {
   favcontainer.innerHTML = "";
+  if(favlist === null || favlist === undefined){
+    favlist= [];
+  }
+
     for (let idx = 0; idx < favlist.length; idx++) {
         let movieListItem = document.createElement("div");
         movieListItem.dataset.id = favlist[idx].imdbID; // setting movie id in  data-id
